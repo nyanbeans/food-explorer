@@ -3,18 +3,19 @@
 //colours
 $darkBlue: #005991;
 $lightBlue: #1a71a9;
-$darkGrey: #dedede;     //search bar
-$lightGrey: #e9e9e9;    //sidebar alternating evens
+$darkGrey: #dedede;        //search bar
+$lightGrey: #e9e9e9;       //sidebar alternating evens
+$evenLighterGrey: #f9f9f9; //sidebar alternating odds + header + cuisines
 
 //media query breakpoints
-$mobileLarge: 330px;        //nav turns from icon to logo, cuisines list still 2 columns
-$tabletSmall: 500px;        //search bar appears and nav is no longer in dropdown, cuisines list is now 3 columns
-$tabletLarge: 670px;        //3 images at top pop into grid
-$desktop: 770px;            //latest recipes and cuisines pops to side, cuisines list ine column
+$mobileLarge: 330px; //nav turns from icon to logo, cuisines list still 2 columns
+$tabletSmall: 500px; //search bar appears and nav is no longer in dropdown, cuisines list is now 3 columns
+$tabletLarge: 670px; //3 images at top pop into grid
+$desktop: 770px;     //latest recipes and cuisines pops to side, cuisines list ine column
 
 //fonts
-$fontCondensed: 'Roboto Condensed', sans-serif;     //nav + headings
-$fontRegular: 'Roboto', sans-serif;                 //body
+$fontCondensed: 'Roboto Condensed', sans-serif; //nav + headings
+$fontRegular: 'Roboto', sans-serif;             //body
 
 //font weights
 $navFont: 700;
