@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+	<title>Food Explorer</title>
 
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
@@ -16,8 +16,26 @@
 <body>
 <!-- Put your HTML code here... -->
 <header>
-	<img src="images/logo.png" alt="Food Explorer logo">
-
+	<img src="images/logo.png" alt="Food Explorer logo" id="logo-full">
+	<img src="images/small-logo.jpg" alt="Food Explorer logo" id="logo-small">
+	<div class="search-bar">
+		<input type="text" placeholder="Search" id="search" name="search">
+		<img src="images/search.png" alt="Search icon">
+	</div>
+	<nav>
+		<ul class="ul-nav-bar">
+			<li><a href="#0">Home</a></li>
+			<li><a href="#0">About</a></li>
+			<li><a href="#0">Reviews</a></li>
+			<li><a href="#0">Recipes</a></li>
+			<li><a href="#0">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="social-nav">
+		<a href="#0"><img src="images/f_logo_RGB-Blue_58.png"></a>
+		<a href="#0"><img src="images/bluegoogle.png"></a>
+		<a href="#0"><img src="images/Twitter_Logo_Blue.png"></a>
+	</div>
 </header>
 <div class="wrapper">
 	<section class="lead-articles">
@@ -84,8 +102,15 @@
 				<p>Read more...</p>
 			</div>
 		</article>
+		<div class="older-posts-button">
+			<p><</p>
+			<p>older posts</p>
+		</div>
 	</section>
 </div>
+<footer>
+	<p>&#169; Site designed by Michael Lee. For educational purpose only. Image Credits</p>
+</footer>
 
 
 
