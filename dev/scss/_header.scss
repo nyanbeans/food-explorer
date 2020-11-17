@@ -11,15 +11,6 @@ nav{
     transition: max-height 0.5s ease-in-out;
 }
 
-.show header nav {
-    max-height: 60;
-    overflow-y: hidden;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    -moz-transition: max-height 0.5s ease-in-out;
-    -o-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-}
-
 .slidedown header nav{            
     max-height: 300px;
     width: 100%;
@@ -49,7 +40,6 @@ header{
 }
 
 .search-bar{
-    width: 100%;
     position: relative;
 }
 
@@ -106,7 +96,7 @@ header{
 }
 
 .grey{
-    color: $darkGrey;
+    color: $darkerGrey;
 }
 
 .social-scroll-wheel i{
@@ -156,5 +146,52 @@ header{
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+@media (min-width: $tabletSmall){
+    .hamburger-button{
+        display: none;
+    }
+
+    nav{
+        max-height: 40px;
+        overflow-y: visible;
+        position: relative;
+        top: -76px;
+    }
+
+    .search-bar{
+        width: 200px;
+        margin: 20px;
+        margin-left: auto;
+    }
+
+    .search-bar input{
+        width: 200px;
+        border: solid 1px $darkerGrey;
+        border-radius: 5px;
+    }
+
+    .ul-nav-bar{
+        display: flex;
+        justify-content: space-evenly;
+        border-left: 10px solid $darkBlue;
+        border-right: 10px solid $darkBlue;
+    }
+    
+    .ul-nav-bar li{
+        width: 100%;
+        border: none;
+        padding: 10px;
+    }
+
+    .social-nav{
+        display: none;
+    }
+
+    #logo-full{
+        margin: 20px;
+    }
+
 
 }
