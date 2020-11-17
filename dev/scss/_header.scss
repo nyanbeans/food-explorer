@@ -307,13 +307,16 @@ header{
 }
 
 @media (min-width: $maxWidth){
-    .search-bar{
-        margin-right: auto;
-    }
 
     header{
-        width: $maxWidth;
+        width: $maxWidth - 20;
         margin: auto;
+    }
+
+    #header-background{
+        background-color: $white;
+        border-bottom: solid 42px $darkBlue;
+        height: 116px;
     }
 
 }
