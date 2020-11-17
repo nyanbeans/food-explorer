@@ -53,6 +53,9 @@ header{
     font-weight: $navFont;
     font-size: 14px;
     background-color: $darkGrey;
+    border: none;
+    box-shadow: inset 0px 0px 4px grey;
+    border-radius: 5px;
 }
 
 .search-bar img{
@@ -157,6 +160,10 @@ header{
 
 @media (min-width: $tabletSmall){
 
+    header{
+        height: 116px;
+    }
+
     .hamburger-button{
         display: none;
     }
@@ -176,11 +183,6 @@ header{
 
     .search-bar input{
         width: 200px;
-        border: none;
-        box-shadow: inset 0px 0px 4px grey;
-
-    //    border: solid 1px $darkerGrey;
-        border-radius: 5px;
     }
 
     .ul-nav-bar{
@@ -315,7 +317,15 @@ header{
     }
 }
 
-@media (min-width: $maxWidth){
+@media (min-width: $maxWidth + 20){
+
+    .ul-nav-bar{
+        border: none;
+    }
+    
+    .search-bar{
+        border: none;
+    }
 
     header{
         width: $maxWidth - 20;
