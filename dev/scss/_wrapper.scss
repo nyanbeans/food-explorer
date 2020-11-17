@@ -42,13 +42,14 @@ h2{
     text-transform: uppercase;
     color: $white;
     background-color: $lightBlue;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0;
     padding: 10px;
 }
 
 .section-latest-recipes img{
     width: 70px;
+    height: 70px;
     border-top: solid 2px $lightBlue;
     border-right: solid 1px $lightBlue;
     border-bottom: solid 1px $lightBlue;
@@ -108,7 +109,8 @@ h2{
 .article-recipes{
     background-color: $white;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .article-recipes h4{
@@ -176,9 +178,20 @@ h2{
         display: grid;
         grid-template-columns: repeat(2);
         grid-template-rows: repeat(2);
+        grid-template-areas:
+            "mussel mussel"
+            "salad  pancake";
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(4);
         grid-template-areas: 
-            "mussel     mussel"
-            "salad      pancake";
+            "articles   articles"
+            "sidebar    sidebar"
+            "recipes    recipes"
+            "button     button";
         grid-gap: 5px;
     }
 
@@ -193,4 +206,24 @@ h2{
     .pancake{
         grid-area: pancake;
     }
+
+    .lead-articles{
+        grid-area: articles;
+    }
+
+    .sidebar{
+        grid-area: sidebar;
+    }
+
+    .section-recipes{
+        grid-area: recipes;
+    }
+
+    .older-posts-button{
+        grid-area: button;
+    }
+}
+
+@media (min-width: $desktop){
+    
 }
