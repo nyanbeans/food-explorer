@@ -6,5 +6,5 @@ const body = document.body;
 const btn = document.querySelector('.hamburger-button');
 
 btn.addEventListener('click', function(){
-    body.classList.toggle('show');
+    body.classList.toggle('slidedown');
 });
