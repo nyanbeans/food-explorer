@@ -110,10 +110,12 @@ header{
 }
 
 .social-scroll-wheel i{
-    -webkit-transition: translate 0.5s ease-in-out;
-    -moz-transition: translate 0.5s ease-in-out;
-    -o-transition: translate 0.5s ease-in-out;
-    transition: translate 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .social-scroll-wheel{
@@ -124,14 +126,7 @@ header{
 }
 
 .social-scroll-wheel:hover i{
-    position: relative;
     top:-22px;
-}
-
-.social-scroll-wheel:hover i{
-}
-
-.social-scroll-wheel:hover .grey{
 }
 
 #logo-full{
@@ -139,9 +134,27 @@ header{
 }
 
 #logo-small{
-    width: 55px;
-    height: 35px;
+    width: auto;
+    height: auto;
     margin: 5px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+//Media Queries//
+
+@media (min-width: $mobileLarge){
+    #logo-small{
+        display: none;
+    }
+
+    #logo-full{
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }
