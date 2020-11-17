@@ -14,6 +14,7 @@ $mobileLarge: 330px;    //nav turns from icon to logo, cuisines list still 2 col
 $tabletSmall: 500px;    //search bar appears and nav is no longer in dropdown, cuisines list is now 3 columns
 $tabletLarge: 670px;    //3 images at top pop into grid
 $desktop: 770px;        //search bar in nav, latest recipes and cuisines pops to side, cuisines list one column
+$maxWidth: 1030px;      //maximum width of site
 
 //fonts
 $fontCondensed: 'Roboto Condensed', sans-serif; //nav + headings

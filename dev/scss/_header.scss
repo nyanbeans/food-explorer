@@ -258,18 +258,21 @@ header{
 
 }
 
-/*@media (min-width: $desktop){
+@media (min-width: $desktop){
 
     nav{
-        grid-template-areas: ". one" "three four";
-        //grid-template-columns: auto 132px;
-        position: fixed;
-        top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1030px;
+        margin: auto;
+//       position: fixed;
+//        top: 0px;
     }
 
     .social-nav{
-        grid-column: span 2;
-        justify-self: end;
+        height: 75px;
+        padding-left: 85%;
     }
 
     .ul-nav-bar{
@@ -281,6 +284,38 @@ header{
         margin: 0px;
     }
 
-}*/
+    .ul-nav-bar{
+        border-right: none;
+        width: 70%;
+    }
+
+    .search-bar{
+        border-right: 10px solid $darkBlue;
+        height: 42px;
+        background-color: $lightBlue;
+        width: 30%;
+    }
+
+    .search-bar input{
+        height: 42px;
+    }
+
+    .search-bar img{
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: $maxWidth){
+    .search-bar{
+        margin-right: auto;
+    }
+
+    header{
+        width: $maxWidth;
+        margin: auto;
+    }
+
+}
 // max width for header before it stops expanding is ~1030px
 // either media query it or set a max width idk
