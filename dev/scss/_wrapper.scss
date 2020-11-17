@@ -89,11 +89,14 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    justify-content: left;
 }
 
 .section-cuisines li{
-    padding: 15px 0px 15px 15px;
-    flex: 1;
+    padding: 6px 0px 6px 15px;
+    width: 50%;
 }
 
 .section-cuisines a{
@@ -138,15 +141,16 @@ h2{
     padding: 8px 5px 8px 5px;
     display: flex;
     flex-direction: row-reverse;
+    width: 110px;
+    justify-content: center;
+    margin-left: auto;
 }
 
-.older-posts-button{
-    font-family: $fontCondensed;
-    font-weight: $headingsFont;
-    color: $lightBlue;
-    text-transform: uppercase;
-    font-size: 1.75em;
-    display: flex;
+.older-posts-button img{
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .arrow{
