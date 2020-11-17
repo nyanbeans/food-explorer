@@ -3,7 +3,7 @@
 //Script for Nav Button//
 
 const body = document.body;
-const btn = document.querySelector('.btn-menu');
+const btn = document.querySelector('.hamburger-button');
 
 btn.addEventListener('click', function(){
     body.classList.toggle('show');
