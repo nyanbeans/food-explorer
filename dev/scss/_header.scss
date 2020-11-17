@@ -15,26 +15,68 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5px;
 }
 
-/*.btn-menu{
-    border: none;
-    font-size: 36px;
-    background: transparent;
-    color: $darkBlue;
+.hamburger-button{
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.btn-menu i{
-    color: $darkBlue;    
-}*/
 
 .hamburger-button div{
     width: 35px;
-    height: 5px;
+    height: 6px;
     background-color: $darkBlue;
-    margin: 6px 0;
+    margin: 5px 0;
     border-radius: 3px;
+}
+
+.search-bar{
+    width: 100%;
+    position: relative;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 8px;
+    height: 36px;
+    font-family: $fontCondensed;
+    background-color: $darkGrey;
+}
+
+.search-bar img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.ul-nav-bar li{
+    background-color: $lightBlue;
+    border: 1px solid $darkBlue;
+    text-align: center;
+    padding: 7px;
+}
+
+.ul-nav-bar a{
+    color: white;
+    font-family: $fontCondensed;
+    font-size: 18px;
+}
+
+.social-nav{
+    display: flex;
+    border: 1px solid $darkBlue;
+    width: 100%;
+    height: 36px;
+    justify-content: center;
+}
+
+.social-nav a{
+    color: $lightBlue;
+    font-size: 22px;
+    margin: 5px 10px;
 }
 
 #logo-full{
@@ -44,4 +86,7 @@ header{
 #logo-small{
     width: 55px;
     height: 35px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
