@@ -96,14 +96,21 @@ h2{
     text-transform: uppercase;
     font-size: 2em;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .article-recipes p{
     font-family: $fontCondensed;
     margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.read-more-button{
+.article-recipes img{
+    padding-top: 20px;
+}
+
+.read-more-button p{
     font-family: $fontCondensed;
     font-weight: $navFont;
     text-transform: uppercase;
@@ -111,6 +118,25 @@ h2{
     background-color: $lightBlue;
     padding: 8px 5px 8px 5px;
     display: flex;
-    flex-direction: row-reverse;
-    flex: 1;
+    justify-content: flex-end;
+}
+
+.older-posts-button{
+    font-family: $fontCondensed;
+    font-weight: $headingsFont;
+    color: $lightBlue;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    display: flex;
+}
+
+.arrow{
+    background-color: $lightBlue;
+    font-weight: $navFont;
+    font-size: 0.85em;
+    color: $white;
+    line-height: 1;
+    padding: 3px 9.5px 0px 7.5px;
+    margin: 30px 5px 30px 5px;
+    border-radius: 15px;
 }
