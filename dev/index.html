@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta 	charset="UTF-8">
-	<meta 	name="viewport" 
-			content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Food Explorer</title>
 
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
-	<link 	rel="preconnect" 
-			href="https://fonts.gstatic.com">
-	<link 	href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap" 
-			rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap"
+		rel="stylesheet">
 	<!-- end Google Fonts -->
 
 	<!--Font Awesome Stylesheets Here-->
@@ -23,112 +23,121 @@
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1">
 </head>
+
 <body>
-<!-- Put your HTML code here... -->
-<header>
-	<img src="images/logo.png" alt="Food Explorer logo" id="logo-full">
-	<img src="images/small-logo.jpg" alt="Food Explorer logo" id="logo-small">
-	<button class="btn-menu teala"><i class="fa fa-bars"></i></button>
-	<nav>
-	<div class="search-bar">
-		<input type="text" placeholder="Search" id="search" name="search">
-		<img src="images/search.png" alt="Search icon">
-	</div>
-		<ul class="ul-nav-bar">
-			<li><a href="#0">Home</a></li>
-			<li><a href="#0">About</a></li>
-			<li><a href="#0">Reviews</a></li>
-			<li><a href="#0">Recipes</a></li>
-			<li><a href="#0">Contact</a></li>
-		</ul>
-	<div class="social-nav">
-		<a href="#0"><i class="fab fa-facebook-f"></i></a>
-		<a href="#0"><i class="fab fa-google"></i></a>
-		<a href="#0"><i class="fab fa-twitter"></i></a>
-	</div>
-</nav>
-</header>
-<div class="wrapper">
-	<section class="lead-articles">
-		<article>
-			<img src="images/mussel.jpg">
-			<h2>Lorem ipsum dolor sit</h2>
-		</article>
-		<article>
-			<img src="images/salad.jpg">
-			<h2>Lorem ipsum dolor</h2>
-		</article>
-		<article>
-			<img src="images/pancake.jpg">
-			<h2>Sit amet consectetur</h2>
-		</article>
-	</section>
-	<section class="section-latest-recipes">
-		<h3>Latest Recipes</h3>
-		<ul class="ul-latest-recipes">
-			<li><img src="images/lamb-tb.jpg">Met consec tetur elit</li>
-			<li><img src="images/breakfast-tb.jpg">Archi tecto dolores</li>
-			<li><img src="images/calamari-tb.jpg">mexpe dita ciatis</li>
-			<li><img src="images/steak-tb.jpg">fugiat eaque aore</li>
-		</ul>
-	</section>
-	<section class="section-cuisines">
-		<h3>Cuisines</h3>
-		<ul class="ul-cuisines">
-			<li><a href="#0">American (95)</a></li>
-			<li><a href="#0">Asian (33)</a></li>
-			<li><a href="#0">Cambodian (3)</a></li>
-			<li><a href="#0">Chinese (281)</a></li>
-			<li><a href="#0">Filipino (8)</a></li>
-			<li><a href="#0">French (40)</a></li>
-			<li><a href="#0">German (7)</a></li>
-			<li><a href="#0">Greek (29)</a></li>
-			<li><a href="#0">Indian (44)</a></li>
-			<li><a href="#0">Italian (60)</a></li>
-			<li><a href="#0">Jamaican (7)</a></li>
-			<li><a href="#0">Japanese (202)</a></li>
-			<li><a href="#0">Korean (120)</a></li>
-			<li><a href="#0">Malaysian (12)</a></li>
-			<li><a href="#0">Mediterranean (9)</a></li>
-			<li><a href="#0">Mexican (25)</a></li>
-			<li><a href="#0">Southern (14)</a></li>
-		</ul>
-	</section>
-	<section class="section-recipes">
-		<article class="article-recipes">
-			<h4>Lorem ipsum dolor sit amet</h4>
-			<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
-			<img src="images/pasta.jpg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
-			<div class="read-more-button">
-				<p>Read more...</p>
+	<!-- Put your HTML code here... -->
+	<header>
+		<img src="images/logo.png" alt="Food Explorer logo" id="logo-full">
+		<img src="images/small-logo.jpg" alt="Food Explorer logo" id="logo-small">
+		<button class="btn-menu teala"><div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div></button>
+		<nav>
+			<div class="search-bar">
+				<input type="text" placeholder="Search" id="search" name="search">
+				<img src="images/search.png" alt="Search icon">
 			</div>
-		</article>
-		<article class="article-recipes">
-			<h4>Vel, eaque quisquam sit amet</h4>
-			<p>Posted by Mike Lee on Monday,July 29, 2013</p>
-			<img src="images/ramen.jpg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
-			<div class="read-more-button">
-				<p>Read more...</p>
+			<ul class="ul-nav-bar">
+				<li><a href="#0">Home</a></li>
+				<li><a href="#0">About</a></li>
+				<li><a href="#0">Reviews</a></li>
+				<li><a href="#0">Recipes</a></li>
+				<li><a href="#0">Contact</a></li>
+			</ul>
+			<div class="social-nav">
+				<a href="#0"><i class="fab fa-facebook-f"></i></a>
+				<a href="#0"><i class="fab fa-google"></i></a>
+				<a href="#0"><i class="fab fa-twitter"></i></a>
 			</div>
-		</article>
-		<div class="older-posts-button">
-			<p><</p>
-			<p>older posts</p>
-		</div>
-	</section>
-</div>
-<footer>
-	<p>&#169; Site designed by Michael Lee. For educational purpose only. Image Credits</p>
-</footer>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<section class="lead-articles">
+			<article>
+				<img src="images/mussel.jpg">
+				<h2>Lorem ipsum dolor sit</h2>
+			</article>
+			<article>
+				<img src="images/salad.jpg">
+				<h2>Lorem ipsum dolor</h2>
+			</article>
+			<article>
+				<img src="images/pancake.jpg">
+				<h2>Sit amet consectetur</h2>
+			</article>
+		</section>
+		<section class="section-latest-recipes">
+			<h3>Latest Recipes</h3>
+			<ul class="ul-latest-recipes">
+				<li><img src="images/lamb-tb.jpg">Met consec tetur elit</li>
+				<li><img src="images/breakfast-tb.jpg">Archi tecto dolores</li>
+				<li><img src="images/calamari-tb.jpg">mexpe dita ciatis</li>
+				<li><img src="images/steak-tb.jpg">fugiat eaque aore</li>
+			</ul>
+		</section>
+		<section class="section-cuisines">
+			<h3>Cuisines</h3>
+			<ul class="ul-cuisines">
+				<li><a href="#0">American (95)</a></li>
+				<li><a href="#0">Asian (33)</a></li>
+				<li><a href="#0">Cambodian (3)</a></li>
+				<li><a href="#0">Chinese (281)</a></li>
+				<li><a href="#0">Filipino (8)</a></li>
+				<li><a href="#0">French (40)</a></li>
+				<li><a href="#0">German (7)</a></li>
+				<li><a href="#0">Greek (29)</a></li>
+				<li><a href="#0">Indian (44)</a></li>
+				<li><a href="#0">Italian (60)</a></li>
+				<li><a href="#0">Jamaican (7)</a></li>
+				<li><a href="#0">Japanese (202)</a></li>
+				<li><a href="#0">Korean (120)</a></li>
+				<li><a href="#0">Malaysian (12)</a></li>
+				<li><a href="#0">Mediterranean (9)</a></li>
+				<li><a href="#0">Mexican (25)</a></li>
+				<li><a href="#0">Southern (14)</a></li>
+			</ul>
+		</section>
+		<section class="section-recipes">
+			<article class="article-recipes">
+				<h4>Lorem ipsum dolor sit amet</h4>
+				<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+				<img src="images/pasta.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi
+					nesciunt nisi eius aperiam sint.</p>
+				<div class="read-more-button">
+					<p>Read more...</p>
+				</div>
+			</article>
+			<article class="article-recipes">
+				<h4>Vel, eaque quisquam sit amet</h4>
+				<p>Posted by Mike Lee on Monday,July 29, 2013</p>
+				<img src="images/ramen.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi
+					nesciunt nisi eius aperiam sint.</p>
+				<div class="read-more-button">
+					<p>Read more...</p>
+				</div>
+			</article>
+			<div class="older-posts-button">
+				<p>
+					<< /p>
+						<p>older posts</p>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<p>&#169; Site designed by Michael Lee. For educational purpose only. Image Credits</p>
+	</footer>
 
 
 
-<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
-<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-<script src="scripts/script.min.js?cb=1"></script>
-<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<script src="scripts/script.min.js?cb=1"></script>
+	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
 </body>
+
 </html>

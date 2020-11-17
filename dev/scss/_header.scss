@@ -1,6 +1,4 @@
-#logo-full{
-    display: none;
-}
+//Nav Setup
 
 nav{
     display: none;
@@ -9,4 +7,40 @@ nav{
 .show header nav {
     display: block;
     width: 100%;
+}
+
+//Header setup
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.btn-menu{
+    border: none;
+    font-size: 32px;
+    background: transparent;
+    color: $darkBlue;
+}
+
+#logo-full{
+    display: none;
+}
+
+#logo-small{
+    width: 55px;
+}
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburger div{
+    width: 35px;
+    height: 5px;
+    background-color: $darkBlue;
+    margin: 6px 0;
 }
