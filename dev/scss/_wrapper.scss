@@ -225,5 +225,27 @@ h2{
 }
 
 @media (min-width: $desktop){
-    
+    .wrapper{
+        max-width: 1030px;
+        margin: auto;
+        padding: 10px;
+
+        display: grid;
+        grid-template-columns: 1fr 230px;
+        grid-template-rows: repeat(4);
+        grid-template-areas: 
+            "articles   sidebar"
+            "recipes    sidebar"
+            "recipes    sidebar"
+            "button     sidebar";
+        grid-gap: 10px;
+    }
+
+    .section-latest-recipes h2{
+        margin-top: 0;
+    }
+
+    .section-latest-recipes{
+        margin-bottom: 10px;
+    }
 }
