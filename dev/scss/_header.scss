@@ -136,6 +136,7 @@ header{
 //Media Queries//
 
 @media (min-width: $mobileLarge){
+
     #logo-small{
         display: none;
     }
@@ -152,6 +153,7 @@ header{
 }
 
 @media (min-width: $tabletSmall){
+
     .hamburger-button{
         display: none;
     }
@@ -195,7 +197,25 @@ header{
     #logo-full{
         margin: 20px;
     }
+}
 
+@media (min-width: $tabletLarge){
+
+    nav{
+        display: grid;
+        grid-template-areas: "one two" "three three";
+    }
+
+    .social-nav{
+        display: flex;
+        order: 2;
+        border: none;
+        padding: 20px;
+    }
+
+    .ul-nav-bar{
+        order: 3;
+    }
 
 }
 // max width for header before it stops expanding is ~1030px
