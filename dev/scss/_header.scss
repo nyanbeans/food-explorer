@@ -146,7 +146,7 @@ header{
         display: block;
         max-width: 70%;
         width: auto;
-        height: auto;
+        height: 35px;
         margin: 5px;
         margin-left: 10px;
         margin-right: 10px;
@@ -197,6 +197,7 @@ header{
 
     #logo-full{
         margin: 20px;
+        max-width: 50%;
     }
 }
 
@@ -205,6 +206,7 @@ header{
     nav{
         display: grid;
         grid-template-areas: "one two" "three three";
+        grid-template-columns: auto 132px;
     }
 
     .social-nav{
@@ -214,10 +216,71 @@ header{
         padding: 20px;
     }
 
+    .social-scroll-wheel{
+        height: 28px;
+    }
+
+    .social-nav a{
+        font-size: 28px;
+    }
+
+    .social-scroll-wheel i{
+        position: relative;
+        top: 0px;
+        -webkit-transition: all 0s ease-in-out;
+        -moz-transition: all 0s ease-in-out;
+        -o-transition: all 0s ease-in-out;
+        transition: all 0s ease-in-out;
+    }
+
+    .social-scroll-wheel:hover i{
+        top:-28px;
+    }
+
     .ul-nav-bar{
         order: 3;
+        grid-column: span 2;
+    }
+
+    .search-bar{
+        width: 35%;
+        min-width: 200px;
+        justify-self: end;
+    }
+
+    .search-bar input{
+        width: 100%;
+    }
+
+    #logo-full{
+        max-width: 40%;
     }
 
 }
+
+/*@media (min-width: $desktop){
+
+    nav{
+        grid-template-areas: ". one" "three four";
+        //grid-template-columns: auto 132px;
+        position: fixed;
+        top: 0px;
+    }
+
+    .social-nav{
+        grid-column: span 2;
+        justify-self: end;
+    }
+
+    .ul-nav-bar{
+        grid-column: span 1;
+    }
+
+    .search-bar{
+        order: 4;
+        margin: 0px;
+    }
+
+}*/
 // max width for header before it stops expanding is ~1030px
 // either media query it or set a max width idk
