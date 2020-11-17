@@ -50,6 +50,8 @@ header{
     padding: 8px;
     height: 36px;
     font-family: $fontCondensed;
+    font-weight: $navFont;
+    font-size: 14px;
     background-color: $darkGrey;
 }
 
@@ -174,7 +176,10 @@ header{
 
     .search-bar input{
         width: 200px;
-        border: solid 1px $darkerGrey;
+        border: none;
+        box-shadow: inset 0px 0px 4px grey;
+
+    //    border: solid 1px $darkerGrey;
         border-radius: 5px;
     }
 
@@ -282,6 +287,10 @@ header{
     .search-bar{
         order: 4;
         margin: 0px;
+    }
+
+    .search-bar input{
+        border-radius: 0px;
     }
 
     .ul-nav-bar{
