@@ -50,7 +50,24 @@ h2{
 
 .section-latest-recipes img{
     width: 70px;
-    border-style: solid;
-    border: 2px 1px;
-    border-color: $lightBlue;
+    border-top: solid 2px $lightBlue;
+    border-right: solid 1px $lightBlue;
+    border-bottom: solid 1px $lightBlue;
+    border-left: solid 2px $lightBlue;
+    margin-right: 10px;
+}
+
+.section-latest-recipes li{
+    font-family: $fontCondensed;
+    font-weight: $headingFont;
+    text-transform: uppercase;
+}
+
+.list-item{
+    display: flex;
+    padding: 10px;
+}
+
+.section-cuisines{
+    background-color: $white;
 }
