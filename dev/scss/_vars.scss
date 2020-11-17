@@ -10,10 +10,10 @@ $evenLighterGrey: #f9f9f9; //sidebar alternating odds + header + cuisines
 $white: #ffffff; 
 
 //media query breakpoints
-$mobileLarge: 330px; //nav turns from icon to logo, cuisines list still 2 columns
-$tabletSmall: 600px; //search bar appears and nav is no longer in dropdown, cuisines list is now 3 columns
-$tabletLarge: 670px; //3 images at top pop into grid
-$desktop: 770px;     //latest recipes and cuisines pops to side, cuisines list ine column
+$mobileLarge: 330px;    //nav turns from icon to logo, cuisines list still 2 columns
+$tabletSmall: 600px;    //search bar appears and nav is no longer in dropdown, cuisines list is now 3 columns
+$tabletLarge: 670px;    //3 images at top pop into grid
+$desktop: 770px;        //search bar in nav, latest recipes and cuisines pops to side, cuisines list one column
 
 //fonts
 $fontCondensed: 'Roboto Condensed', sans-serif; //nav + headings

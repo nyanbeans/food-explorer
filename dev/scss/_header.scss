@@ -24,6 +24,7 @@ header{
     justify-content: space-between;
     padding: 5px 0px 5px 0px;
     background-color: $white;
+    padding: 0;
 }
 
 .hamburger-button{
@@ -219,3 +220,4 @@ header{
 
 }
 // max width for header before it stops expanding is ~1030px
+// either media query it or set a max width idk

@@ -170,3 +170,27 @@ h2{
         margin-right: 10px;
     }
 }
+
+@media (min-width: $tabletLarge){
+    .lead-articles{
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(2);
+        grid-template-areas: 
+            "mussel     mussel"
+            "salad      pancake";
+        grid-gap: 5px;
+    }
+
+    .mussel{
+        grid-area: mussel;
+    }
+
+    .salad{
+        grid-area: salad;
+    }
+
+    .pancake{
+        grid-area: pancake;
+    }
+}
