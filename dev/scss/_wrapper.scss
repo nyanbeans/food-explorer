@@ -2,6 +2,21 @@
     margin: 10px;
 }
 
+.lead-articles{
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-rows: 1fr;
+}
+
+.image-article{
+    position: relative;
+}
+
+.image-article img{
+    object-fit: cover;
+    height: 100%;
+}
+
 .image-article h2{
     margin: 0;
     line-height: 0;
