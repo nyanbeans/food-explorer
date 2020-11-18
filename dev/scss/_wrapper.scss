@@ -101,7 +101,7 @@ h2{
 }
 
 .section-cuisines a{
-    font-family: $fontCondensed; //i feel like this should be body font but it's thinner and bolded than regular so idk
+    font-family: $fontRegular;
     font-weight: $headingsFont;
     color: black;
 }
@@ -124,7 +124,7 @@ h2{
 }
 
 .article-recipes p{
-    font-family: $fontCondensed;
+    font-family: $fontRegular;
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
